@@ -1,5 +1,4 @@
-const greeterListener = require('./greeter')
-
 module.exports = function(socket){
-    greeterListener(socket)
+    require('./greeter')(socket)
+    require('./user_activities')(socket)
 }
